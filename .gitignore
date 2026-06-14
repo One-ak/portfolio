@@ -1,0 +1,10 @@
+.DS_Store
+.vscode/
+
+cv_render/
+build_ansh_cv.py
+Ansh_Pratap_Singh_CV.docx
+
+assets/images/avatar.png
+assets/images/favicon.jpg
+assets/images/my-cv.pdf
