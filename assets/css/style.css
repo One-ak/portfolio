@@ -71,6 +71,7 @@ html{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    min-height: 44px;
     font-weight: 500;
     padding: 12px 20px;
     background: #efefef;
@@ -92,6 +93,22 @@ html{
 .btn:focus-visible {
     outline: 2px solid var(--first-color);
     outline-offset: 2px;
+}
+.cv-downloads {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.cv-downloads .btn {
+    white-space: nowrap;
+}
+.nav-cv-downloads {
+    gap: 8px;
+}
+.nav-cv-downloads .btn {
+    padding: 10px 12px;
+    font-size: 14px;
 }
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
@@ -249,6 +266,9 @@ nav.header-scrolled{
     gap: 20px;
     flex-wrap: wrap;
 }
+.hero-cv-downloads {
+    display: inline-flex;
+}
 .featured-text-btn>.blue-btn,
 .blue-btn{
     background: var(--first-color);
@@ -372,7 +392,7 @@ h3{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-block: 30px 70px;
+    padding-block: 30px;
     padding-inline: 20px;
     width: 100%;
     background: var(--color-white);
@@ -384,10 +404,16 @@ h3{
     font-size: 15px;
     color: #777;
 }
+.about-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 24px;
+}
+.about-btn .cv-downloads {
+    justify-content: center;
+}
 .about-btn .btn{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
     background: var(--first-color);
     color: var(--color-white);
     border-radius: 30px;
@@ -614,6 +640,11 @@ footer{
         height: 320px;
     }
 }
+@media only screen and (max-width: 1120px){
+    .nav-button{
+        display: none;
+    }
+}
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
     .nav-button{
@@ -734,6 +765,9 @@ footer{
     justify-content: center;
     gap: 12px;
   }
+  .hero-cv-downloads {
+    justify-content: center;
+  }
   .btn {
     min-height: 44px;
     padding: 11px 16px;
@@ -774,7 +808,10 @@ footer{
     gap: 34px;
   }
   .about-info {
-    padding: 26px 18px 82px;
+    padding: 26px 18px;
+  }
+  .about-btn {
+    margin-top: 20px;
   }
   .skills-box {
     margin: 8px 0;
@@ -834,6 +871,14 @@ footer{
     }
     .featured-text-btn .btn {
         flex: 1 1 150px;
+    }
+    .cv-downloads {
+        width: 100%;
+        justify-content: center;
+    }
+    .cv-downloads .btn {
+        flex: 1 1 135px;
+        min-width: 0;
     }
     .form-inputs{
         flex-direction: column;
