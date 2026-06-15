@@ -9,7 +9,7 @@ Live site: https://one-ak.github.io/portfolio/
 - Responsive single-page portfolio built with HTML, CSS, and JavaScript.
 - Mobile-friendly navigation, project cards, experience section, and contact form.
 - Custom favicon/icon set and hardened static hosting headers.
-- Current CV downloads included as `Ansh_Pratap_Singh_CV.pdf` and `Ansh_Pratap_Singh_CV.docx`.
+- Current CV download included as `Ansh_Pratap_Singh_CV.pdf`.
 
 ## Run Locally
 
